@@ -1,0 +1,26 @@
+main()
+{
+    string Str-1;         // read data from log file
+    A.M-1(Str-1);         // вызов метода M-1 из класса А и передача строки Str-1 в качестве параметра
+    A.M-2();              // .. без параметров
+    System.Out.Println(B.Out-1);    // вывод на консоль переменной Out-1 из класса B
+}
+
+ class A
+ {
+    public static void M-1(string s)
+    {
+        System.Out.Println("Out from M-1");
+        B.Out-1 = "written from class A";       // запись данных в переменную Out-1 класса B из класса А
+    }
+    
+    public static void M-2()
+    {
+        System.Out.Println("Out from M-2");
+    }
+ }
+ 
+ class B
+ {
+    public static string Out-1;
+ }
