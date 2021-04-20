@@ -1,20 +1,19 @@
 package GitParse;
 
 public class Parse {
-	private String firstCut;
-	private String secondCut;
+	public static String firstCut;
+	public static String secondCut;
 	
-	public void parse(String cut) {
-		this.firstCut = "";
-		this.secondCut = "";
-		Main.var.length();
+	public static void parse(String cut) {
+		firstCut = " ";
+		secondCut = " ";
+		StringBuffer sb = new StringBuffer();
+		sb.length();
 		firstCut = Main.var.substring(0, Main.var.indexOf(" "));
-		secondCut = Main.var.substring(Main.var.indexOf(" "), Main.var.length());
-	}
-	public String getFirstCut() {
-		return firstCut;
-	}
-	public String getSecondCut() {
-		return secondCut;
+		int tmpStr = firstCut.length() +1; 
+		secondCut = Main.var.substring(tmpStr, Main.var.length());
+		//System.out.println(firstCut);
+		//System.out.println(secondCut);
+		Data.storage(firstCut);
 	}
 }
