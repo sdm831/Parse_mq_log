@@ -1,0 +1,19 @@
+02/11/2021 03:14:50 PM - Process(18513.4) User(sssh) Program(amqzmuc0)
+                    Host(utp-nagr-sbp-dk) Installation(Installation1)
+                    VRMF(9.1.0.1) QMgr(ROUTER)
+                    Time(2021-02-11T12:14:50.332Z)
+                    CommentInsert1(Linux 4.12.14-94.41-default (MQ Linux (x86-64 platform) 64-bit))
+                    CommentInsert2(/opt/mqm (Installation1))
+                    CommentInsert3(9.1.0.1 (p910-001-181108))
+                   
+AMQ6287I: IBM MQ V9.1.0.1 (p910-001-181108).
+
+EXPLANATION:
+IBM MQ system information: 
+Host Info         :- Linux 4.12.14-94.41-default (MQ Linux (x86-64 platform)
+64-bit) 
+Installation      :- /opt/mqm (Installation1) 
+Version           :- 9.1.0.1 (p910-001-181108)
+ACTION:
+None.
+----- amqxeida.c : 6278 -------------------------------------------------------
