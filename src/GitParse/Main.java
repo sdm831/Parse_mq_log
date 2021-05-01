@@ -38,10 +38,6 @@ public class Main
 			System.out.println(ex);
 		}
 
-		System.out.println("Блок лога: " +Data.str_all);
-		System.out.println("Шапка: " +Data.str_head);
-		System.out.println("Остальное: " +Data.str_tail);
-		System.out.println(" ");
 		System.out.println("Print DataList:");
 		//System.out.println(Data.dataList);		// такой вывод не информативен, мешанина какая то получается, только путает
 
