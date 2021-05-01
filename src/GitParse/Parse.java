@@ -4,8 +4,8 @@ public class Parse
 {	
 	public static void parse(String cut) 
 	{
-		cut.length();
-		cut.indexOf("Process");
+		cut.length();				// этот метод тебе возвращает число, но ты его не используешь
+		cut.indexOf("Process");		// аналогично
 		String clearCut = cut.substring(cut.indexOf("Process"), cut.indexOf("AMQ"));
 		clearCut = clearCut.replaceAll("\\s+", "");
 		String tempCut = "";
@@ -16,7 +16,7 @@ public class Parse
 		int stopIndex = 0;
 		while (clearCut.length() != 0) 
 		{
-			clearCut.length();
+			clearCut.length();				// опять
 			if (clearCut.length() != 0) 
 			{
 				startIndex = clearCut.indexOf("(");

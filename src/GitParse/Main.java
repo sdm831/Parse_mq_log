@@ -3,6 +3,7 @@ package GitParse;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.Map.Entry;
 
 import static GitParse.Data.dataList;
 
@@ -15,7 +16,7 @@ public class Main
 		System.out.println("Hello, start parse!");
 		try 
 		{
-		File file = new File("F:\\Project\\Java Testing\\AMQERR02.LOG");
+		File file = new File("test-log-1.txt");
 		//File file = new File("D:\\tmp\\parse_mq\\AMQERR01_1.LOG");
 		FileReader fr = new FileReader(file);
 		BufferedReader br = new BufferedReader(fr);
@@ -38,15 +39,14 @@ public class Main
 		}
 
 		System.out.println("Print DataList:");
-		System.out.println(Data.dataList);
-		/*
-		int i = 1;
-		for (var item : Data.dataList)		// перебор всех элементов коллекции DataList
-		{
-			System.out.println(i + ". " + item);
-			i++;
+		//System.out.println(Data.dataList);		// такой вывод не информативен, мешанина какая то получается, только путает
+
+		// более наглядный вывод "словаря", по образу .json:  key:value, т.е. словарь у тебя собрался как надо
+		for (Entry<String, String> entry : dataList.entrySet()) {
+			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
-		*/
+
 		System.out.println("-------------------------------");
+
 	} 
 }
