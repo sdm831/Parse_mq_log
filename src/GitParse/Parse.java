@@ -61,7 +61,20 @@ public class Parse
 				startIndex = 0;
 				stopIndex = 0;
 				startIndex = clearCutTail.indexOf(":");
+				if (startIndex == -1)
+				{
+					return;
+				}
 				tempCut = clearCutTail.substring(0, startIndex);
+				/*try
+				{
+				tempCut = clearCutTail.substring(0, startIndex);
+				}
+				catch(StringIndexOutOfBoundsException es)
+				{
+					System.out.println(es);
+				}
+				*/
 				hmName = tempCut;
 				tempLenght = tempCut.length() +1;
 				clearCutTail = clearCutTail.substring(tempLenght, clearCutTail.length());
